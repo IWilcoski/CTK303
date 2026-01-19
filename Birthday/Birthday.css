@@ -1,0 +1,65 @@
+body {
+    background-image: url(Background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+}
+
+#wrapper{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    width: 960px;
+    margin: 1em auto;
+    grid-column-gap: 12px;
+    background-color: transparent;
+}
+
+header {
+    grid-column: span 12;
+    text-align: center;
+    color: white;
+}
+
+main {
+    grid-column: 2/ span 10;
+    margin: 1em auto;
+    padding: 20px;
+    margin-top: 20px;
+    background-image: linear-gradient(lightblue, darkblue);
+    border: 4px solid black;
+}
+
+nav {
+    text-align: center;
+}
+
+div {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.righty {
+    float: right;
+    margin-left: 12px;
+    border: solid darkblue 3px;
+}
+
+.lefty {
+    float: left;
+}
+
+aside {
+    background-color: white;
+    height: 306px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+a {
+    color: rgb(140, 52, 255);
+    text-decoration: none;
+}
+  
+a:hover {
+    color: rgb(248, 86, 75);
+}  
