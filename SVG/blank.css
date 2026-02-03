@@ -1,0 +1,108 @@
+#Were {
+    opacity: 0;
+}
+
+#Cheesed {
+    opacity: 0;
+}
+
+#To {
+    opacity: 0;
+}
+
+#Meet {
+    opacity: 0;
+}
+
+#You {
+    opacity: 0;
+}
+
+#Cheese {
+    transform-origin: bottom;
+}
+
+#Cheese:hover {
+    animation: cheese 10s infinite linear;
+}
+
+@keyframes cheese {
+    0%   { transform-origin: bottom; transform: scale(1); }
+    5%   { transform: scale(1.5);}
+    10%  { transform: scale(1); }
+    50%  { transform: scale(1); }
+    80%  { transform-origin: center; transform: rotate(0deg);}
+    85%  { transform: rotate(180deg);}
+    90%  { transform: rotate(360deg);}
+    100% { transform: rotate(0deg); transform: scale(1); }
+}
+
+#Cheese:hover ~ #Group #Were{
+    animation: werefade 10s infinite linear;
+}
+
+#Cheese:hover + #Group #Cheesed{
+    animation: cheesedfade 10s infinite linear;
+}
+
+#Cheese:hover + #Group #To{
+    animation: tofade 10s infinite linear;
+}
+
+#Cheese:hover + #Group #Meet{
+    animation: meetfade 10s infinite linear;
+}
+
+#Cheese:hover + #Group #You{
+    animation: youfade 10s infinite linear;
+}
+
+@keyframes werefade {
+    0%   { transform: translate(0,-200px); opacity: 100; }
+    10%   { transform: translate(0,-200px); }
+    15%   { transform: translate(0,0px); }
+    75%   { opacity: 100; }
+    80%   { transform: translate(0,0px); }
+    90%   { transform: translate(0,-200px); opacity: 0;}
+    100%  { }
+}
+
+@keyframes cheesedfade {
+    0%   { transform: translate(0,-200px); opacity: 100;}
+    15%   { transform: translate(0,-200px); }
+    20%   { transform: translate(0,0px); }
+    75%   { opacity: 100; }
+    80%   { transform: translate(0,0px); }
+    90%   { transform: translate(0,-200px); opacity: 0;}
+    100%  { }
+}
+
+@keyframes tofade {
+    0%   { transform: translate(0,-200px); opacity: 100;}
+    20%   { transform: translate(0,-200px); }
+    25%   { transform: translate(0,0px); }
+    75%   { opacity: 100; }
+    80%   { transform: translate(0,0px); }
+    90%   { transform: translate(0,-200px); opacity: 0;}
+    100%  { }
+}
+
+@keyframes meetfade {
+    0%   { transform: translate(0,-200px); opacity: 100;}
+    25%   { transform: translate(0,-200px); }
+    30%   { transform: translate(0,0px); }
+    75%   { opacity: 100; }
+    80%   { transform: translate(0,0px); }
+    90%   { transform: translate(0,-200px); opacity: 0;}
+    100%  { }
+}
+
+@keyframes youfade {
+    0%   { transform: translate(0,-200px); opacity: 100;}
+    30%   { transform: translate(0,-200px); }
+    35%   { transform: translate(0,0); }
+    75%   { opacity: 100; }
+    80%   { transform: translate(0,0px); }
+    90%   { transform: translate(0,-200px); opacity: 0;}
+    100%  { }
+}
