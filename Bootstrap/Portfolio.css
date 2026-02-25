@@ -1,0 +1,114 @@
+body {
+    padding-top: 4rem;
+    background-color: slategrey;
+    margin: none;
+}
+
+/*MAIN*/
+
+main {
+    max-width: 992px;
+    margin: none;
+    text-align: center;
+}
+
+h2 {
+    color: teal;
+    background-color: white;
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+    border-top: black solid 2px;
+    border-bottom: black solid 2px;
+}
+
+/*CAROUSEL*/
+
+#myCarousel{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    max-width: 960px;
+}
+
+.f-progress {
+    display: none;
+}
+
+.f-carousel__dots {
+    display: none;
+}
+
+.f-button {
+    opacity: 50%;
+    color: blue;
+    border-radius: 50%;
+    background-color: white;
+}
+
+div .f-carousel__slide {
+    border-radius: 20px;
+}
+
+#carousel{
+    margin: 0rem auto;
+    width:100%
+}
+
+img {
+   border-radius: inherit;
+}
+
+#carousel:hover {
+    filter:grayscale(60%);
+}
+
+#carousel:hover + .centered {
+    opacity: 100%
+}
+
+.centered {
+    font-size: 32px;
+    color: white;
+    opacity: 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*About*/
+
+#about {
+    width: 100%;
+    max-width: 800px;
+    margin: 0rem auto;
+}
+
+/*Projects*/
+
+#projects {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0rem auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+/*Contact*/
+
+#contact {
+    width: 100%;
+    max-width: 800px;
+    margin: 0rem auto;
+}
+
+#contact a {
+    padding: 1rem;
+}
+
+/*  Media Queries (responsive to screen width) */
+@media all and (min-width: 992px){
+    h2 {color: black; background-color: transparent; border: transparent;}
+    main {margin: 0rem auto;}
+    #myCarousel {margin: 0rem auto;}
+}

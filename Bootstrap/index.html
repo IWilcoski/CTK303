@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio Main</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.autoplay.css"/>
+
+    <link href="Portfolio.css" rel="stylesheet" type="text/css"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body class = "bg-primary-subtle">
+    <div>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-info fixed-top">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="#">Isaiah Wilcoski</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Me</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </header>
+    <main>
+        <div><h2>Highlighted Piece</h2></div>
+        <!-- <video id="Carousel" width="1600" height="350" muted autoplay loop="auto" > <source src="WinterJamCroppedRecording.mp4" type="video/mp4"> </video> -->
+        <div class="f-carousel mb-4" id="myCarousel">
+            <div class="f-carousel__slide"><img src="Screen1.png" id="carousel" alt="Start screen" /><div class ="centered">Bugged and Sorted</div></div>
+            <div class="f-carousel__slide"><img src="Screen2.png" id="carousel" alt="Gameplay screen" /><div class ="centered">Bugged and Sorted</div></div>
+            <div class="f-carousel__slide"><img src="Screen3.png" id="carousel" alt="Gameover screen" /><div class ="centered">Bugged and Sorted</div></div>
+        </div>
+        <h2>About Me</h2>
+        <nav id = "about">
+            <!-- <img class="righty" src="IMG_0920.jpg" alt="Me" /> -->
+            <p>My name is Isaiah Wilcoski. I am a Creative Technologies student from Illinois State University, majoring in game design. I specialize in programming and am educated in general game design production techniques such as agile. In addition I understand elements like game balance, encounters, rewards, and narrative structure.</p>
+        </nav>
+        <h2>My Work</h2>
+        <nav id = "projects">
+            <div class = "row">
+                <div class = "col mb-4">
+                    <div class="card sm-4">
+                        <img src="Screen2Thumb.png" class="card-img-top" alt="Bugged and Sorted gameplay">
+                        <div class="card-body">
+                            <h5 class="card-title">Bugged and Sorted</h5>
+                            <p class="card-text">A collegiate game jam project using Unity engine, involving high pressure drag and drop sorting with conveyor belts that contain bugs of different traits or even defective bugs.</p>
+                            <a href="#" class="btn btn-primary">See More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col mb-4">
+                    <div class="card sm-4">
+                        <img src="Land2Thumb.png" class="card-img-top" alt="Landscape project view">
+                        <div class="card-body">
+                            <h5 class="card-title">Creating a Landscape</h5>
+                            <p class="card-text">Using Unreal engine, I created a landscape to navigate featuring varied and blending ground textures, immersive footfall sounds, and more, to immerse a player in a space.</p>
+                            <a href="#" class="btn btn-primary">See More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "row">
+                <div class = "col mb-4">
+                    <div class="card sm-4">
+                        <img src="RenPy3Thumb.png" class="card-img-top" alt="A character from the game Wish Upon a Star">
+                        <div class="card-body">
+                            <h5 class="card-title">Wish Upon a Star</h5>
+                            <p class="card-text">A cross-dimensional dating sim using Ren'Py, this game jam project features mechanics to track character's opinions of the player and different endings.</p>
+                            <a href="#" class="btn btn-primary">See More</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class = "col mb-4">
+                    <div class="card sm-4">
+                        <img src="Space2Thumb.png" class="card-img-top" alt="Gameplay from my space game">
+                        <div class="card-body">
+                            <h5 class="card-title">Space Game</h5>
+                            <p class="card-text">One of my early collegiate projects using Unity engine, Space Game involves placeable barrier power-ups and various enemy patterns in a Space Invaders style game.</p>
+                            <a href="#" class="btn btn-primary">See More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <h2>Contact Me</h2>
+        <nav id = "contact" class = "mb-4">
+            <a href="https://facebook.com" class = "bi bi-facebook"></a>
+            <a href="https://twitter.com" class = "bi bi-twitter"></a>
+            <a href="https://instagram.com" class = "bi bi-instagram"></a>
+            <a href="https://linkedin.com" class = "bi bi-linkedin"></a>
+        </nav>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.autoplay.umd.js"></script>
+    <script>
+        const container = document.getElementById("myCarousel");
+        const options = { infinite: true };
+        //Infinite allows carousel looping
+        new Carousel(document.getElementById("myCarousel"), {
+            Autoplay : {
+            timeout : 2000
+            }
+        }, {
+            Autoplay
+        });
+    </script>
+    </div> <!--Container-->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+</script>
+
+</html>
