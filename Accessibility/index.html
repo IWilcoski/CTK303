@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <html lang="en"></html>
+    <title>Portfolio Main</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.autoplay.css"/>
+
+    <link href="Portfolio.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Isaiah Wilcoski</h1>
+            <nav>
+                <a href="#about">About Me</a>
+                <a href="#projects">Projects</a>
+                <a href="#">Resume</a>
+                <a href="#contact">Contact</a> 
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div><h2>Highlighted Piece</h2></div>
+        <!-- <video id="Carousel" width="1600" height="350" muted autoplay loop="auto" > <source src="WinterJamCroppedRecording.mp4" type="video/mp4"> </video> -->
+        <div class="f-carousel" id="myCarousel">
+            <div class="f-carousel__slide"><img src="Screen1.png" id="carousel" alt="Start screen" /><div class ="centered">Bugged and Sorted</div></div>
+            <div class="f-carousel__slide"><img src="Screen2.png" id="carousel" alt="Gameplay screen" /><div class ="centered">Bugged and Sorted</div></div>
+            <div class="f-carousel__slide"><img src="Screen3.png" id="carousel" alt="Gameover screen" /><div class ="centered">Bugged and Sorted</div></div>
+        </div>
+        <h2>About Me</h2>
+        <nav id = "about">
+            <!-- <img class="righty" src="IMG_0920.jpg" alt="Me" /> -->
+            <p>My name is Isaiah Wilcoski. I am a Creative Technologies student from Illinois State University, majoring in game design. I specialize in programming and am educated in general game design production techniques such as agile. In addition I understand elements like game balance, encounters, rewards, and narrative structure.</p>
+        </nav>
+        <h2>My Work</h2>
+        <nav id = "projects">
+            <div class ="project" id = "p1"><a href="#" class ="centered2">Bugged and Sorted</a></div>
+            <div class ="project" id = "p2"><a href="#" class ="centered2">Creating a Landscape</a></div>
+            <div class ="project" id = "p3"><a href="#" class ="centered2">Wish Upon a Star</a></div>
+            <div class ="project" id = "p4"><a href="#" class ="centered2">Space Game</a></div>
+        </nav>
+        <h2>Contact Me</h2>
+        <nav id = "contact">
+            <a class="bi bi-instagram" href="https://instagram.com" target="_blank" aria-label="Link to Instagram"></a>
+        </nav>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.autoplay.umd.js"></script>
+    <script>
+        const container = document.getElementById("myCarousel");
+        const options = { infinite: true };
+        //Infinite allows carousel looping
+        new Carousel(document.getElementById("myCarousel"), {
+            Autoplay : {
+            timeout : 2000
+            }
+        }, {
+            Autoplay
+        });
+    </script>
+</body>
+</html>
